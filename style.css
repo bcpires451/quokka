@@ -1,0 +1,79 @@
+body {
+    background-color:  lightslategray;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; /* tutto che fuoriesce dal main viene nascosto, in questo caso 
+    è stato utilizzato perchè il footer nascondeva il border radius */
+}
+
+main > header {
+    
+    background-image: 
+    linear-gradient(150deg, rgb(255, 0, 0, 0.450), rgb(0, 0, 255, 0.450)),
+    url(card-quokka/quokka-header.jpg);
+    margin-bottom: 75px;
+    background-size: 150%;
+    background-position: left center;
+}
+
+.quokka-profile {
+    border-radius: 50%;
+    position: relative;
+    top: 75px;
+    max-width: 150px;
+    border: 4px red solid;
+}
+
+header img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section > h1, h2, p {
+    text-align: left;   
+    padding: 0 0 0 15px;
+}
+
+iframe {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+a {
+    background-color: white;
+    color: darkmagenta;
+    border: 3px darkmagenta solid;
+    border-radius: 8px;
+    padding: 10px;
+    width: 50%;
+    text-decoration: none;
+    cursor: pointer;   
+}
+
+a:hover {
+    background-color: lightcoral;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: brown;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+span {
+    font-weight: 700;
+}
